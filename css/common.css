@@ -1,0 +1,43 @@
+body,ul,ol,li,p,h1,h2,h3,h4,h5,h6,form,fieldset,table,td,img,div,dl,dt,dd,input{margin:0;padding:0;}
+body{font-size:16px;}
+img,button{border:none;}
+button{ background-color: white;}
+li{list-style:none;}
+input,select,textarea{outline:none;border: none;background-color:none;}
+textarea{resize:none;}
+a{text-decoration:none;color:white;}
+a:hover{color: #f9f9f9;font-size: 18px;}
+/*球队标志*/
+.bxkts{background: url("../images/icon/贝西克塔斯.png") no-repeat 30px 10px;}
+.Manchester{background:url("../images/icon/Manchester.png") no-repeat 30px 10px;}
+.Eindhoven{background:url("../images/icon/Eindhoven.png") no-repeat 30px 10px;}
+.AtleticoMadrid{background:url("../images/icon/AtleticoMadrid.png") no-repeat 30px 10px;}
+.PFC{background:url("../images/icon/PFC.png") no-repeat 30px 10px;}
+.BCE{background:url("../images/icon/BCE.png") no-repeat 30px 10px;}
+.Juventus{background:url("../images/icon/Juventus.png") no-repeat 30px 10px;}
+.Sevilla{background:url("../images/icon/Sevilla.png") no-repeat 30px 10px;}
+.Benfica{background:url("../images/icon/Benfica.png") no-repeat 30px 10px;}
+.Monchengladbach{background:url("../images/icon/Monchengladbach.png") no-repeat 30px 10px;}
+.Dortmund{background:url("../images/icon/Dortmund.png") no-repeat 30px 10px;}
+.Tottenham{background:url("../images/icon/Tottenham.png") no-repeat 30px 10px;}
+.Porto{background:url("../images/icon/Porto.png") no-repeat 30px 10px;}
+.Monaco{background:url("../images/icon/Monaco.png") no-repeat 30px 10px;}
+.Warszawa{background:url("../images/icon/Warszawa.png") no-repeat 30px 10px;}
+.Copenhagen{background:url("../images/icon/Copenhagen.png") no-repeat 30px 10px;}
+
+.Napoli{background:url("../images/icon/Napoli.png") no-repeat 30px 0;}
+.Barcelona{background:url("../images/icon/Barcelona.png") no-repeat 30px 0;}
+.BAYERN{background:url("../images/icon/BAYERN.png") no-repeat 30px 0;}
+.LSTF{background:url("../images/icon/LSTF.png") no-repeat 30px 0;}
+.Arsenal{background:url("../images/icon/Arsenal.png") no-repeat 30px 0;}
+.Paris{background:url("../images/icon/Paris.png") no-repeat 30px 0;}
+.Lyonnais{background:url("../images/icon/Lyonnais.png") no-repeat 30px 0;}
+.SGLB{background:url("../images/icon/SGLB.png") no-repeat 30px 0;}
+.FCDinamo{background:url("../images/icon/FCDinamo.png") no-repeat 30px 0;}
+.Celtic{background:url("../images/icon/Celtic.png") no-repeat 30px 0;}
+.Portugal{background:url("../images/icon/Portugal.png") no-repeat 30px 0;}
+.Leverkusen{background:url("../images/icon/Leverkusen.png") no-repeat 30px 0;}
+.Brugge{background:url("../images/icon/Brugge.png") no-repeat 30px 0;}
+.Moscow{background:url("../images/icon/Moscow.png") no-repeat 30px 0;}
+.RealMadrid{background:url("../images/icon/RealMadrid.png") no-repeat 30px 0;}
+.LeicesterCity{background:url("../images/icon/LeicesterCity.png") no-repeat 30px 0;}
