@@ -120,6 +120,7 @@ a:hover,a:focus{color:#74777b;}
 	display: block;
 	font-size: 35%;
 	font-weight:lighter;
+	letter-spacing:1.5px;
 	padding: 2em 0 0.5em 0;
 	color: #fff;
     word-spacing: 5px;
