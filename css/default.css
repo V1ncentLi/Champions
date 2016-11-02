@@ -97,8 +97,8 @@ a:hover,a:focus{color:#74777b;}
 	display: none;
 }
 .htmleaf-header h1 {
-	font-weight: 600;
-	font-size: 2em;
+	font-weight:lighter;
+	font-size:36px;
 	line-height: 1;
 	margin-bottom: 0;
 	font-family: "Microsoft YaHei","宋体","Segoe UI", "Lucida Grande", Helvetica, Arial,sans-serif, FreeSans, Arimo;
@@ -109,13 +109,20 @@ a:hover,a:focus{color:#74777b;}
 .htmleaf-header h1 a:hover{
 	color:#c0c0c0;
 }
-.htmleaf-header h1 span {
+.htmleaf-header h1 .wales{
+    display: block;
+    font-size: 16px;
+    padding-left: 30%;
+    padding-top: 24px;
+}
+.htmleaf-header h1 .bottomNews{
 	font-family: "Microsoft YaHei","宋体","Segoe UI", "Lucida Grande", Helvetica, Arial,sans-serif, FreeSans, Arimo;
 	display: block;
-	font-size: 60%;
-	font-weight: 400;
-	padding: 0.8em 0 0.5em 0;
+	font-size: 35%;
+	font-weight:lighter;
+	padding: 2em 0 0.5em 0;
 	color: #fff;
+    word-spacing: 5px;
 }
 /*nav*/
 .htmleaf-demo a{color: #1d7db1;text-decoration: none;}

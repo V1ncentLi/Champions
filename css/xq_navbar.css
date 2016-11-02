@@ -1,19 +1,19 @@
-*{
-    outline: 0;
-    padding: 0;
-    margin: 0;
-    border: 0;
-}
+*{outline: 0;padding: 0;margin: 0;border: 0;}
 body{ font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, sans-serif; }
 .rightArea{float: right;}
 .leftArea{float: left;}
 /*顶部信息条*/
 .headbar{
+    position: absolute;
+    top:0;
+    left:0;
     height: 30px;
     width:100%;
-    background-color: #0f2a56;
+    margin: 0 auto;
+    clear: both;
+    background-color: #013870;
     border-bottom: 2px solid #9b1637;
-    overflow: hidden;
+    z-index: 998;
 }
 .headlogo{
     padding-left: 20px;
@@ -27,13 +27,24 @@ body{ font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaV
 .headlogo a{
     font-size: medium;
 }
-.rightArea{
-    padding-right: 20px;
+.headlogo a:hover{
+    color: aliceblue;
+}
+.aboutMe{
+    display: inline-block;
+    height: 30px;
+    line-height: 30px;
+    padding-right: 60px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: lighter;
 }
 .headimg{
-    height: 100px;
-    background:url("../images/bgimg.png");
+    height: 105px;
+    background:url("../images/headimg.jpg") no-repeat center top;
+    background-size: 100% 100%;
     overflow: hidden;
+    margin-top: 30px;
 }
 .xq_bag{
 	width: 100%px;
@@ -76,13 +87,10 @@ body{ font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaV
     padding-left:100px ;
     overflow: hidden;
 }
-.vmcarousel-normal li{
-    height: 50px;
-    width:50px;
-    border: 1px black solid;
-}
-.Wallop-item{
-    padding-left:44px;
+.topMatch{
+    padding: 0;
+    margin: 0;
+    text-align: center;
 }
 .Matchitem li{
     float: left;
@@ -94,9 +102,18 @@ body{ font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaV
     font-size: 14px;
     color: #74777b;
 }
+@media screen and (min-width:1366px){
+    .Matchitem li{width: 12%;}
+}
+.Matchitem{
+    overflow: hidden;
+    zoom: 1;
+    width:94%;
+    margin-left: auto;
+    margin-right: auto;
+}
 li:hover{
     border-bottom: medium solid #9b1637;
-
 }
 .Matchitem li .team1{
     padding: 10px 20px 20px 54px;
@@ -108,156 +125,136 @@ li:hover{
 }
 .Matchitem li .team2{
     margin-top: 10px;
-    padding-left: 54px;
+    padding-left: 40px;
 }
-.btn1{
-    position: absolute;
-    left: 5px;
-    top:60px;
-}
-.btn2{
-    position:absolute;
-    right: 5px;
-    top:60px;
-}
-.showPic{
-    margin: 50px auto;
-    padding-left: 0;
-    height:900px;
-    background-color:#0f2a56;
-    overflow: hidden;
-    border-top: 2px solid #9b1637;
-    border-bottom: 2px solid #9b1637;
-}
-.showPic a{
+.btnArea{
     text-align: center;
-    clear: both;
-    color: white;
-    display: inline-block;
-    width:500px;
-    border: solid 1px white;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    margin-left: 424px;
-    margin-top: 50px;
-    background-repeat: no-repeat;
-    background-position: 280px 6px;
-    background-image: url("../images/icon/moreicon.png");
 }
-.showPic a:hover{
-    font-size: 16px;
-    background-color: #55c4f4;
-    border: none;
-}
-.picBox{
-    float: left;
-    position: relative;
-    padding-top:30px ;
-    padding-left:50px;
-    overflow:hidden;
-}
-.picText{
-    position:absolute; z-index:2; left:126px; bottom:10px;
-    color: #ffffff;
-    font-size: 18px;
-    padding-bottom: 5px;
-}
-.picBox img{
-    border:medium solid #0f2a56;
-}
-.sampleimage{
-    width: 360px;
-    height: 200px;
-}
-.Maraid{
-    width: 400px;
-    height:440px;
-}
-.secondLine{
-    width: 400px;
-    height:240px;
-}
-.secondLine2{
-    width: 360px;
-    height:240px;
-}
-.matchVideo{
-    clear: both;
-    overflow: auto;
-}
-.videoArea a{
-    color: #325585;
-}
-.videoArea li:hover{
-    border: none;
-}
-.videoArea a:hover{
-    font-size: 16px;
-}
-.videoHead{
+.matchBtn{
     margin-top: 30px;
-    margin-left: 20px;
-    color: #325585;
-    font-size: 24px;
-    font-weight: lighter;
 }
-.videoArea img{
-    width:230px;
+.matchBtn button.Wallop-buttonPrevious{
+    cursor:pointer;
+    width: 32px;
+    height:32px;
+    background: url("../images/icon/leftBefore.png") no-repeat center center;
+    margin-right: 10px;
+}
+.matchBtn button.Wallop-buttonPrevious:hover{
+    background: url("../images/icon/leftAfter.png") no-repeat center center;
+}
+.matchBtn button.Wallop-buttonPrevious:active{
+    background: url("../images/icon/leftActive.png") no-repeat center center;
+}
+.matchBtn button.Wallop-buttonNext{
+    cursor:pointer;
+    width: 32px;
+    height:32px;
+    background: url("../images/icon/rightBefore.png") no-repeat center center;
+}
+.matchBtn button.Wallop-buttonNext:hover{
+    background: url("../images/icon/rightAfter.png") no-repeat center center;
+}
+.matchBtn button.Wallop-buttonNext:active{
+    background: url("../images/icon/rightActive.png")no-repeat center center;
+}
+
+.showPic{
+    margin-top: 100px;
+    background:url("../images/picBoximg.jpg") right center no-repeat;
+    background-size:100% 100% ;
+    width:100%;
+    padding-top: 30px;
+    padding-bottom: 20px;
     height: auto;
 }
-.videoArea ul{
-    width:90%;
-    margin:20px auto;
-    overflow: auto;
+.picContainer{
+    width: 95%;
+    margin: 20px auto;
+    margin-bottom: 10px;
 }
-.videoArea li{
-    float: left;
-    padding-left: 50px;
-}
-.videoArea li span{
+/*图片展示区*/
+.container:before,
+.container:after { content: ""; display: table; }
+.container:after { clear: both;}
+.item { float: left; margin-bottom: 20px;position: relative;overflow: hidden;box-sizing:border-box;border:3px solid rgba(0,0,0,0);
+    transition:border 0.6s;
+    -moz-transition:border 0.6s; /* Firefox 4 */
+    -webkit-transition:border 0.6s; /* Safari and Chrome */
+    -o-transition:border 0.6s; /* Opera */ }
+.item:hover{border: 3px solid #55c4f4;}
+.item img { max-width: 100%; max-height: 100%;height:350px; vertical-align: bottom; z-index:1; }
+.first-item { clear: both;}
+.last-row, .last-row ~ .item { margin-bottom: 0;}
+.item h2{font-size:22px; width:100%; font-weight:500;  display:block; position:absolute; left:0; bottom:0;padding-left: 10px; height:40px; line-height:30px; text-align: left; letter-spacing: 1px; z-index:2; color:#fff;overflow:hidden; white-space: nowrap;text-overflow: ellipsis;}
+@media (min-width:620px) and (max-width:820px) {.item h2{font-size:16px;}}
+@media (min-width:100px) and (max-width:619px) {.item h2{font-size:12px;}}
+/*结束*/
+/*showPic图片特效*/
+.avatar img {
     display: block;
+    border: 0;
+    width: 100%;
+    transform: scale(1);
+    transition: all 1s ease 0s;
+    -webkit-transform: scale(1);
+    -webkit-transform: all 1s ease 0s;
+}
+.avatar:hover img {
+    transform: scale(1.3);
+    transition: all 1s ease 0s;
+    -webkit-transform: scale(1.3);
+    -webkit-transform: all 1s ease 0s;
+}
+/*结束*/
+.picBtn{
+    overflow: hidden;
+    zoom: 1;
+    width: 100%;
+    height: 40px;
+    margin:40px auto;
     text-align: center;
 }
-.videoArea .moreVideo{
-    text-align: center;
-    clear: both;
-    color: #325585;
-    font-weight: normal;
-    display: block;/*dispaly:inline-block;*/
-    width:500px;
-    border: solid 2px #325585;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    margin-left: 400px;
-    margin-top: 100px;
-    background-repeat: no-repeat;
-    background-position: 280px 6px;
-    background-image: url("../images/icon/morevideo.png");
-}
-.shouqi{
-    text-align: center;
-    clear: both;
-    color: #325585;
-    font-weight: normal;
-    display: block;/*dispaly:inline-block;*/
-    width:500px;
-    border: solid 2px #325585;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    margin-left: 400px;
-    margin-top: 100px;
-    background-repeat: no-repeat;
-    background-position: 280px 6px;
-    background-image: url("../images/icon/morevideo.png");
-}
-.hiddenVideo{
-    display: none;
-}
-.videoArea .moreVideo:hover{
-    background-color: #325585;
+.showPic a.morePic{
+    display: inline-block;
     color: white;
-    background-image:url("../images/icon/moreicon.png") ;
+    width:110px;
+    height:38px;
+    line-height: 38px;
+    border: solid 1px white;
+    margin-right: 20px;
+    margin-left: 30px;
+    transition: background-color 0.7s;
+    -moz-transition:background-color 0.7s; /* Firefox 4 */
+    -webkit-transition:background-color 0.7s; /* Safari and Chrome */
+    -o-transition:background-color 0.7s; /* Opera */
 }
+.showPic a.btnLeft{
+    text-align: right;
+    padding-right: 6px;
+    padding-left: 10px;
+    background: url("../images/icon/toLeft.png") no-repeat 5px center;
+    width: 113px;
+    border-radius:6px;
+}
+.showPic a.btnLeft:hover{
+    background-color:#55c4f4;
+    border: 1px solid #55c4f4;
+    border-radius:8px;
+}
+.showPic a.btnRight{
+    text-align: left;
+    padding-left: 8px;
+    background: url("../images/icon/toRight.png") no-repeat 90px center;
+    width: 113px;
+    border-radius:6px;
+}
+.showPic a.btnRight:hover{
+    background-color:#55c4f4;
+    border: 1px solid #55c4f4;
+    border-radius:8px;
+}
+/*欧冠文字*/
 .textArea .textLine{
     color: #325585;
     font-weight: lighter;
@@ -277,11 +274,89 @@ li:hover{
 .textArea .textLine p:last-child{
     margin-top: 14px;
 }
+.matchVideo{
+    clear: both;
+    overflow: auto;
+}
+.videoArea li:hover{
+    border: none;
+}
+.videoArea a:hover{
+    font-size: 16px;
+}
+.videoHead{
+    margin-top: 30px;
+    margin-left: 20px;
+    color: #325585;
+    font-size: 24px;
+    font-weight: lighter;
+}
+.videoArea img{
+    width:100%;
+    height: auto;
+}
+
+.videoArea ul.videoList{
+    width:90%;
+    margin:20px auto;
+    overflow:hidden;
+}
+.videoArea .videoList li{
+    text-align: center;
+    width: 20%;
+    float: left;
+    margin-bottom: 50px;
+    padding-left: 54px;
+}
+.videoArea li span{
+    display: inline-block;
+    height: 50px;
+    font-size: 12px;
+    font-weight: lighter;
+    padding-top: 0;
+    color: #325585;
+    overflow: hidden;
+}
+.videoArea li span:hover{
+    text-decoration: underline;
+}
+.moreVideo{
+    text-align: center;
+    clear: both;
+    color: #325585;
+    font-weight: normal;
+    display: block;/*dispaly:inline-block;*/
+    width:340px;
+    border: solid 2px #325585;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-left:auto;
+    margin-right: auto;
+    margin-top: 50px;
+    background-repeat: no-repeat;
+    background-position: 205px 8px;
+    background-image: url("../images/icon/morevideo.png");
+    border-radius: 6px;
+    transition: background-color 0.5s;
+    -moz-transition:background-color 0.5s; /* Firefox 4 */
+    -webkit-transition:background-color 0.5s; /* Safari and Chrome */
+    -o-transition:background-color 0.5s; /* Opera */
+}
+.hiddenVideo{
+    display: none;
+}
+.videoArea .moreVideo:hover{
+    background-color: #325585;
+    color: white;
+    border-radius: 8px;
+    background-image:url("../images/icon/morevideoAfter.png") ;
+}
 .myTeam{
     margin-top: 100px;
     padding-top: 30px;
     text-align: center;
-    color: #74777b;
+    color: #325585;
+    font-weight: lighter;
     font-size: 18px;
 }
 .myTeam ul{
@@ -294,88 +369,85 @@ li:hover{
     float: left;
     border: none;
 }
+/*底部*/
 .footer{
     clear: both;
-    height: 350px;
     background: black;
     overflow: hidden;
-    /*background: #2fa0ec url("../images/icon/football1.png") no-repeat;*/
+    text-align: center;
+    font-weight:lighter ;
 }
-.footerArea{
-    width: 1250px;
+.footerContainer{
+   /* background-color: yellow;*/
     height: 240px;
-    margin: 0 auto;
-    border-bottom: 1px #0f2a56 solid;
+    width: 90%;
+    margin:40px auto;
+    margin-bottom: 16px;
+    border-bottom:1px solid #325585 ;
+    position: relative;
+
 }
-.footerArea a:hover{
-    font-size: 16px;
-    text-decoration: underline;
-}
-.footerLeft{
-    width: 100px;
+.footerContainer .footballIcon{
+    display: inline-block;
+    width: 118px;
     height: 100px;
-    background: url("../images/icon/football1.png") no-repeat 20px 20px;
+    background: url("../images/icon/football1.png") no-repeat 40px 10px;
+    /*background-color: #9b1637;*/
 }
-.footerLeft:hover{
-    background: url("../images/icon/football2.png") no-repeat 30px 30px;
+.footerContainer .footballIcon:hover{
+    background: url("../images/icon/football2.png") no-repeat 48px 20px;
+}
+.footerTop{
+    border: 1px black solid;
+    width:80%;
+    position: absolute;
+    top:0;
+    left: 18%;
+}
+.rightLine{
+    border-right:1px solid #325585 ;
 }
 .footerContent{
-    float: left;
-    margin-right: 170px;
-    margin-top: 50px;
-}
-.footerRight{
-    width: 100px;
-    height: 100px;
-    margin-right: 0;
-    margin-left: 170px;
-    background: url("../images/QRcode.jpg") no-repeat ;
-}
-.clearRight{
-    margin-right: 0;
-}
-.footerBar{
-    margin: 20px auto;
-    width:1250px;
-    height: 50px;
-    border-top: 1px #0f2a56 solid;
-    color: white;
-    font-size: xx-small;
-    text-align: center;
-    padding-top: 40px;
-}
-.footerBar .footerText1{
-    font-size: 16px;
-}
-
-/*.football{
-    display: block;
-    width: 200px;
-    height: 200px;
-    background: url("../images/icon/football1.png") no-repeat 100px 100px;
-}
-.football:hover{
-    background:url("../images/icon/football2.png") no-repeat 110px 110px;
-}
-.footerContent ul{
-    float: left;
-}
-.footerContent li:hover{
-    border: none;
-}
-.footerContent .listsFirst > li{
-   display: inline-block;
-    margin-top: 0;
+    width:24%;
     margin-left: auto;
     margin-right: auto;
-    padding-right: 200px;
 }
-.footerContent li a{
-    display: block;
-    font-size: 16px;
+.footerContent a:hover{
+    text-decoration: underline;
+    color: antiquewhite;
 }
-.QRcode{
-    width: 100px;
-    height: 100px;
-    background: url("../images/QRcode.jpg") no-repeat;
-}*/
+.footerContent img{
+    border: 4px solid black;
+    transition: border 0.5s;
+    border-radius: 4px;
+    -moz-transition:border 0.5s; /* Firefox 4 */
+    -webkit-transition:border 0.5s; /* Safari and Chrome */
+    -o-transition:border 0.5s; /* Opera */
+}
+.footerContent img:hover{
+    border: 4px solid antiquewhite;
+}
+.footerBottom{
+  /*  background-color: #3498DB;*/
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 30px;
+    padding-bottom: 10px;
+    border-top: 1px solid #325585;
+}
+.footerBottom .bottomText{
+   /* background-color: #64448f;*/
+    width: 80%;
+    margin: 0 auto;
+    color: #eeeeee;
+}
+.bottomText1{
+    font-size: 18px;
+    color:#f1f1f1;
+}
+.bottomText2{
+    font-size:xx-small;
+    color:#f1f1f1;
+}
+

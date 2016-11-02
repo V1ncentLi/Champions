@@ -1,4 +1,5 @@
 body,ul,ol,li,p,h1,h2,h3,h4,h5,h6,form,fieldset,table,td,img,div,dl,dt,dd,input{margin:0;padding:0;}
+html.body{width:100%;height:100%;overflow: hidden;}
 body{font-size:16px;}
 img,button{border:none;}
 button{ background-color: white;}
@@ -6,7 +7,9 @@ li{list-style:none;}
 input,select,textarea{outline:none;border: none;background-color:none;}
 textarea{resize:none;}
 a{text-decoration:none;color:white;}
-a:hover{color: #f9f9f9;font-size: 18px;}
+a:hover{color: #f9f9f9;}
+.fl{float: left;}
+.fr{float: right;}
 /*球队标志*/
 .bxkts{background: url("../images/icon/贝西克塔斯.png") no-repeat 30px 10px;}
 .Manchester{background:url("../images/icon/Manchester.png") no-repeat 30px 10px;}
