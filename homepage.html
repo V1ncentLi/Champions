@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>Champions</title>
+    <link rel="stylesheet" type="text/css" href="css/common.css" />
+    <link rel="stylesheet" type="text/css" href="css/main.css"/>
+    <link rel="stylesheet" type="text/css" href="css/xq.css"/>
+    <link rel="stylesheet" type="text/css" href="css/wallop.css"/>
+    <link rel="stylesheet" type="text/css" href="css/zoomio.css" />
+    <link rel="stylesheet" type="text/css" href="css/jquery.fatNav.css" />
+</head>
+<body>
+<div class="headbar">
+    <div class="headlogo leftArea">
+    <img src="images/icon/headicon.png" alt="Champions" /><a href="#">Champions</a>
+    </div>
+    <div class="rightArea">
+        <span class="aboutMe">「 About Me 」</span>
+        <div class="fat-nav">
+            <div class="fat-nav__wrapper">
+                <ul>
+                    <li><a href="#">Programmer： 李博林</a></li>
+                    <li><a href="#">School： 山东理工大学</a></li>
+                    <li><a href="#">Tel： 18643599279</a></li>
+                    <li><a href="#">E-mail： libolin1993@outlook.com</a></li>
+                    <li class="lastContant"><a href="#">「 Champions 」 为个人项目，不作其它用途，部分资料来源「 欧洲足球冠军联赛 - 中文官网 」、「 Futbol Club Barcelona 」，涉及版权问题请及时与笔者联系，对您造成的不便表示歉意。更多功能，敬请期待...</a></li>
+                </ul>
+            </div>
+        </div>
+        <!--<a href="#" onclick="fun2()">「关于本页」</a><a href="#wechatQRcode" onclick="fun1()">「关于作者」</a>-->
+    </div>
+</div>
+<div class="headimg">
+</div>
+<div class="xq_bag" id="bar5">
+    <ul class="xq_navbar">
+        <li class="xq_navli"><a href="#">欧冠前沿</a></li>
+        <li class="xq_navli"><a href="#">赛程</a></li>
+        <li class="xq_navli"><a href="#">参赛者</a></li>
+        <li class="xq_navli"><a href="#">积分榜</a></li>
+        <li class="xq_navli"><a href="#">射手榜</a></li>
+        <li class="xq_navli"><a href="#">助攻榜</a></li>
+        <li class="xq_navli"><a href="#">参赛资格</a></li>
+    </ul>
+</div>
+<div class="topBar">
+    即将开始：小组赛第4轮 2016-11-02/03
+</div>
+<div class="topMatch">
+    <div class="Wallop">
+        <div class="Wallop-list">
+            <div class="Wallop-item">
+                <ul class="Matchitem">
+                    <li><div class="team1 bxkts">贝西克塔斯</div>
+                        <div class="matchTime">1:1</div>
+                        <div class="team2 Napoli">那不勒斯</div>
+                    </li>
+                    <li>
+                        <div class="team1 Manchester">曼城</div>
+                        <div class="matchTime">3:1</div>
+                        <div class="team2 Barcelona">巴塞罗那</div>
+                    </li>
+                    <li>
+                        <div class="team1 Eindhoven">埃因霍温</div>
+                        <div class="matchTime">1:2</div>
+                        <div class="team2 BAYERN">拜仁慕尼黑</div>
+                    </li>
+                    <li><div class="team1 AtleticoMadrid">马德里竞技</div>
+                        <div class="matchTime">2:1</div>
+                        <div class="team2 LSTF">罗斯托夫</div>
+                    </li>
+                    <li><div class="team1 PFC">卢多戈雷茨</div>
+                        <div class="matchTime">2:3</div>
+                        <div class="team2 Arsenal">阿森纳</div>
+                    </li>
+                    <li><div class="team1 BCE">巴塞尔</div>
+                        <div class="matchTime">1:2</div>
+                        <div class="team2 Paris">巴黎圣日耳曼</div>
+                    </li>
+                    <li>
+                        <div class="team1 Monchengladbach">门兴</div>
+                        <div class="matchTime">1:1</div>
+                        <div class="team2 Celtic">凯尔特人</div>
+                    </li>
+                    <li>
+                        <div class="team1 Benfica">本菲卡</div>
+                        <div class="matchTime">1:0</div>
+                        <div class="team2 FCDinamo">基辅迪纳摩</div>
+                    </li>
+                </ul>
+            </div>
+            <div class="Wallop-item">
+                <ul class="Matchitem">
+                <li>
+                    <div class="team1 Sevilla">塞维利亚</div>
+                    <div class="matchTime">4:0</div>
+                    <div class="team2 SGLB">萨格布迪纳摩</div>
+                </li>
+                <li>
+                    <div class="team1 Juventus">尤文图斯</div>
+                    <div class="matchTime">1:1</div>
+                    <div class="team2 Lyonnais">里昂</div>
+                </li>
+                <li>
+                    <div class="team1 Dortmund">多特蒙德</div>
+                    <div class="matchTime">1:0</div>
+                    <div class="team2 Portugal">里斯本竞技</div>
+                </li>
+                <li><div class="team1 Tottenham">热刺</div>
+                    <div class="matchTime">0:1</div>
+                    <div class="team2 Leverkusen">勒沃库森</div>
+                </li>
+                <li><div class="team1 Porto">波尔图</div>
+                    <div class="matchTime">1:0</div>
+                    <div class="team2 Brugge">布鲁日</div>
+                </li>
+                <li><div class="team1 Monaco">摩纳哥</div>
+                    <div class="matchTime">3:0</div>
+                    <div class="team2 Moscow">中央陆军</div>
+                </li>
+                <li><div class="team1 Warszawa">华沙莱吉亚</div>
+                    <div class="matchTime">3:3</div>
+                    <div class="team2 RealMadrid">皇家马德里</div>
+                </li>
+                <li><div class="team1 Copenhagen">哥本哈根</div>
+                    <div class="matchTime">0:0</div>
+                    <div class="team2 LeicesterCity">莱斯特城</div>
+                </li>
+            </ul>
+            </div>
+        </div>
+        <div class="btnArea">
+             <div class="matchBtn">
+                <button class="Wallop-buttonPrevious"></button>
+                 <button class="Wallop-buttonNext"></button>
+             </div>
+        </div>
+    </div>
+</div>
+<div class="showPic" id="zxzx">
+    <table class="picContainer">
+        <tr>
+            <td colspan="2" rowspan="2">
+                <div class="avatar">
+                    <img src="images/showPic/pic1.jpg" />
+                    <div class="picTitle">
+                        <div class="titleBox bigPic">
+                            <div class="picTime">
+                                2016-11-02
+                            </div>
+                            <div class="bottomTitle bigPic_title">
+                                小组赛第4轮：里昂成功阻击尤文图斯
+                            </div>
+                            <div class="titleContant">
+                                托利索第85分钟打入扳平比分一球，成功阻击尤文图斯,斑马军团前4轮拿到8分，暂居小组第二，4轮战罢里昂积4分小组第三，仍有晋级希望。
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </td>
+            <td>
+                <div class="avatar">
+                    <img src="images/showPic/pic2.jpg" />
+                    <div class="picTitle">
+                        <div class="titleBox">
+                            <div class="picTime">
+                                2016-11-02
+                            </div>
+                            <div class="bottomTitle">
+                                梅西破门巴塞罗那1-3被曼城逆转
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </td>
+            <td>
+                <div class="avatar">
+                    <img src="images/showPic/pic3.jpg" />
+                    <div class="picTitle">
+                        <div class="titleBox">
+                            <div class="picTime">
+                                2016-11-02
+                            </div>
+                            <div class="bottomTitle">
+                                巴黎2-1绝杀巴塞尔提前出线
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div class="avatar">
+                    <img src="images/showPic/pic4.jpg" />
+                    <div class="picTitle">
+                        <div class="titleBox">
+                            <div class="picTime">
+                                2016-11-02
+                            </div>
+                            <div class="bottomTitle">
+                                登贝莱点球救主凯尔特人战平门兴
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </td>
+            <td>
+                <div class="avatar">
+                    <img src="images/showPic/pic5.jpg" />
+                    <div class="picTitle">
+                        <div class="titleBox">
+                            <div class="picTime">
+                                2016-11-02
+                            </div>
+                            <div class="bottomTitle">
+                                格列兹曼双响马竞锁头名出线
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div class="avatar">
+                    <img src="images/showPic/pic6.jpg" />
+                    <div class="picTitle">
+                        <div class="titleBox">
+                            <div class="picTime">
+                                2016-11-03
+                            </div>
+                            <div class="bottomTitle">
+                                多特蒙德1-0里斯本竞技提前出线
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </td>
+            <td>
+                <div class="avatar">
+                    <img src="images/showPic/pic7.jpg" />
+                    <div class="picTitle">
+                        <div class="titleBox">
+                            <div class="picTime">
+                                2016-11-02
+                            </div>
+                            <div class="bottomTitle">
+                                罗伯托全力防守德布劳内
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </td>
+            <td>
+                <div class="avatar">
+                    <img src="images/showPic/pic8.jpg" />
+                    <div class="picTitle">
+                        <div class="titleBox">
+                            <div class="picTime">
+                                2016-11-03
+                            </div>
+                            <div class="bottomTitle">
+                                皇马3-3战平华沙军团无缘提前出线
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </td>
+            <td>
+                <div class="avatar">
+                    <img src="images/showPic/pic9.jpg" />
+                    <div class="picTitle">
+                        <div class="titleBox">
+                            <div class="picTime">
+                                2016-11-02
+                            </div>
+                            <div class="bottomTitle">
+                                莱万两球，拜仁锁定出线资格
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </td>
+        </tr>
+    </table>
+    <!--  <div class="picContainer">
+        <div class="container">
+             <div class="item avatar">
+                 <img src="images/showPic/012.jpg" alt="梅西"/><h2>梅西3球巴萨屠杀曼城</h2>
+             </div>
+             <div class="item avatar">
+                 <img src="images/showPic/02.jpg" alt="C罗两传"/><h2>C罗两传皇马大胜华沙军团</h2>
+             </div>
+             <div class="item avatar">
+                 <img src="images/showPic/03.jpg" alt="穆勒"/><h2>穆勒破门激情庆祝</h2>
+             </div>
+             <div class="item avatar">
+                 <img src="images/showPic/04.jpg" alt="卢卡斯"/><h2>卢卡斯进球巴黎胜</h2>
+             </div>
+             <div class="item avatar">
+                 <img src="images/showPic/05.jpg" alt="迪马利亚" /><h2>迪马利亚闪击得分</h2>
+             </div>
+             <div class="item avatar">
+                 <img src="images/showPic/06.jpg"alt="桑切斯"/><h2>桑切斯破门阿森纳大胜卢戈雷茨</h2>
+             </div>
+             <div class="item avatar">
+                 <img src="images/showPic/07.jpg" alt="卡拉斯科"/><h2>卡拉斯科得分马竞小胜对手</h2>
+             </div>
+             <div class="item avatar">
+                 <img src="images/showPic/08.jpg" alt="莱万"/><h2>莱万进球拜仁胜埃因霍温</h2>
+             </div>
+             <div class="item avatar">
+                 <img src="images/showPic/09.jpg" alt="多特蒙德"/><h2>多特蒙德战胜里斯本竞技</h2>
+             </div>
+         </div>-->
+        <div class="picBtn">
+            <a class="morePic btnLeft" href="#showThis"  onclick="fun1()">More Video </a>
+            <a class="morePic btnRight" href="#showThis"  onclick="fun1()">More Info </a>
+        </div>
+</div>
+<div class="textArea">
+    <div class="textLine" id="ogls">
+    <p>欧洲冠军联赛，简称欧冠，是欧洲足球协会联盟主办的年度足球比赛，代表欧洲俱乐部足球最高荣誉和水平，被认为是全世界最高素质，最具影响力以及最高水平的俱乐部赛事，亦是世界上奖金最高的足球赛事和体育赛事之一，估计每届赛事约有超过十亿电视观众通过人造卫星观看赛事。</p>
+    <p>欧冠前身是1955/1956赛季创建的欧洲俱乐部冠军杯（European Champion Clubs' Cup）。1992/1993赛季，欧足联对这项杯赛的赛制和名称正式进行了修改，赛事因此改称现在使用的“欧洲冠军联赛”（UEFA Champions League），而旧有的名称“欧洲俱乐部冠军杯”则被套用于现在的冠军奖杯上。算上欧洲冠军杯时代，皇家马德里一共11次夺冠，之后是7次夺冠的AC米兰，5次夺冠的拜仁慕尼黑和利物浦、巴塞罗那，以及4次夺冠的阿贾克斯。</p>
+    </div>
+</div>
+<div class="matchVideo" id="champions">
+    <div class="videoHead"> 欧冠冠军</div>
+    <div class="videoArea" >
+        <ul class="videoList">
+            <li ><a href="###"><img  src="images/video1.jpg" alt="2106Champions" title="2016,Real Madrid"/><span>2016, Milano, &nbspReal Madrid</span></a></li>
+            <li id="moreHere"><a href="###"><img  src="images/video2.jpg" alt="2105Champions" title="2015,FC Barcelona"/><span>2015, Berlin, FC Barcelona</span></a></li>
+            <li><a href="###"><img  src="images/video3.jpg" alt="2104Champions" title="2014,Real Madrid"/><span>2014, Lisboa, &nbspReal Madrid</span></a></li>
+            <li ><a href="###"><img  src="images/video4.jpg" alt="2103Champions" title="2013,FC Bayern"/><span>2013,London, FC Bayern </span></a></li>
+            <div class="hiddenVideo">
+                <li><a href="###"><img  src="images/video5.jpg" alt="2102Champions" title="2012,Munich,Chelsea"/><span>2012, Munich,Chelsea</span></a></li>
+                <li><a href="###"><img  src="images/video6.jpg" alt="2101Champions" title="2011,FC Barcelona"/><span>2011,London,FC Barcelona</span></a></li>
+                <li><a href="###"><img  src="images/video7.jpg" alt="2100Champions" title="2010,Inter Milano"/><span>2010, Madrid,Inter Milano</span></a></li>
+                <li><a href="###"><img  src="images/video8.jpg" alt="2009Champions" title="2009,FC Barcelona "/><span> 2009, &nbsp&nbspRome,FC Barcelona </span></a></li>
+                <li><a href="###"><img  src="images/video9.jpg" alt="2008Champions" title="2008,Manchester United"/><span>2008, Moscow,Manchester United</span></a></li>
+                <li><a href="###"><img  src="images/video10.jpg" alt="2007Champions" title="2007,Associazione Calcio Milan"/><span>2007, Athens,Associazione Calcio Milan</span></a></li>
+                <li><a href="###"><img  src="images/video11.jpg" alt="2006Champions" title="2006,FC Barcelona"/><span>2006, &nbspParis,FC Barcelona</span></a></li>
+                <li><a href="###"><img  src="images/video12.jpg" alt="2005Champions" title="2005,Istanbul,Liverpool"/><span>2005,Istanbul,Liverpool</span></a></li>
+            </div>
+        </ul>
+        <a href="#moreHere" class="moreVideo" >点击开关 </a>
+    </div>
+</div>
+<div class="myTeam" id="homeTeam">
+    Home Team
+    <ul>
+        <li class="myteam1"><a href="http://www.manunited.com.cn/"><img src="images/icon/ManchesterUnited.png" alt="ManchesterUnited" title="ManchesterUnited"/></a></li>
+        <li class="myteam2"><a href="http://www.bvb.de/"><img src="images/icon/BorussiaDortmund.png"alt="BorussiaDortmund" /></a></li>
+        <li class="myteam3"><a href="http://sports.qq.com/isocce/barcelonafc/"><img src="images/icon/FCBarcelona.png" alt="FCBarcelona"/></a></li>
+        <li class="myteam4"><a href="http://www.fcbayern.cn/"><img src="images/icon/FCBAYERN.png" alt="FCBAYERN"/></a></li>
+        <li class="myteam5"><a href="http://cn.liverpoolfc.com/"><img src="images/icon/LiverpoolFC.png" alt="LiverpoolFC"/></a></li>
+    </ul>
+</div>
+<div class="footer" id="wechatQRcode">
+    <div class="footerContainer">
+        <div class="footballIcon fl"></div>
+        <div class="footerTop fr">
+            <div class="footerContent fl rightLine">
+                <a href="#ogls">欧冠联赛</a><br />
+                <a href="#zxzx">最新资讯</a><br />
+                <a href="#homeTeam">Home Team</a><br />
+                <a href="#champions">历届冠军</a><br />
+            </div>
+            <div class="footerContent fl rightLine">
+                <a href="http://www.manunited.com.cn/">Manchester United</a><br />
+                <a href="http://sports.qq.com/isocce/barcelonafc/">FC Barcelona</a><br />
+                <a href="http://www.fcbayern.cn/">FC Bayern</a><br />
+                <a href="http://cn.liverpoolfc.com/">Liverpool FC</a><br />
+            </div>
+            <div class="footerContent fl rightLine">
+                <a href="http://sports.qq.com/ucl/">腾讯足球</a><br />
+                <a href="http://sports.sina.com.cn/g/championsleague/">新浪足球</a><br />
+                <a href="https://soccer.hupu.com/">虎扑足球</a><br />
+                <a href="http://www.uefa.com/">UEFA官网</a><br />
+            </div>
+            <div class="footerContent fl"><img src="images/QRcode.jpg" alt="myQRcode" /></div>
+        </div>
+    </div>
+    <div class="footerBottom">
+        <div class="bottomText">
+            <span class="bottomText1">"Champions"</span><span class="bottomText2">为个人项目，不作其它用途，涉及所有资料如有侵权请及时告知。</span>
+        </div>
+    </div>
+</div>
+    <script src="js/jquery-2.1.1.min.js" type="text/javascript"></script>
+    <script src="js/jquery.fatNav.js" type="text/javascript"></script>
+    <script src="js/xq_navbar.js" type="text/javascript"></script>
+    <script src="js/Wallop.min.js" type="text/javascript"></script>
+    <script src="js/jquery.focus-follow.js" type="text/javascript"></script>
+    <script src="js/jquery.row-grid.js" type="text/javascript"></script>
+
+<script>
+    $(document).ready(function () {
+        $(".container").rowGrid({itemSelector: ".item", minMargin: 24, maxMargin: 28, firstItemClass: "first-item" });
+    })
+    $.fatNav();
+    $(window).load(function(){
+        $("#bar5").xq_navbar({
+            "type": "underline",
+            "liwidth": "avg",
+            "bgcolor": "#9b1637",
+            "hcolor": "white"
+        });
+    });
+    $(function() {
+        $(".videoList img").focusFollow({
+            wrapper: '#wrapper',
+            color: '#325585',
+            opacity: 0.8,
+            margin_horizontal: 8,
+            margin_vertical: 8,
+            speed: 600,
+            timeout: 500
+        });
+    });
+    var wallopEl = document.querySelector('.Wallop');
+    var slider = new Wallop(wallopEl);
+    $(function() {
+        $(".moreVideo").bind("click", function () {
+            var $content = $(".hiddenVideo");
+            if ($content.is(":visible")) {
+                $content.hide(1000);
+            } else {
+                $content.show(1000);
+            }
+        })
+    });
+    </script>
+<script type="text/javascript">
+    $(document).ready(function() {
+        var topmenu = $(".headbar");
+        var topmenu_top = topmenu.offset().top;
+        reset_topmenu_top(topmenu, topmenu_top);
+        $(window).scroll(function() {
+            reset_topmenu_top(topmenu, topmenu_top);
+        });
+    });
+    function reset_topmenu_top(topmenu, topmenu_top) {
+        var document_scroll_top = $(document).scrollTop();
+        if (document_scroll_top > topmenu_top) {
+            topmenu.css('top', document_scroll_top);
+        }
+        if (document_scroll_top <= topmenu_top) {
+            topmenu.css('top', topmenu_top);
+        }
+    }
+</script>
+</body>
+</html>
