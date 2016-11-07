@@ -1,0 +1,263 @@
+#container {
+    width:98%;
+    margin:50px auto;
+}
+@media only screen and (max-width: 768px) {
+    #container {
+        width: 90%;
+        margin: 0 auto;
+    }
+}
+.match_title{
+    text-align: left;
+    font-size: 24px;
+    font-weight: normal;
+    color:#325585;
+}
+.resp-tabs-list{
+    overflow: hidden;
+    zoom: 1;
+    margin: 0;
+    padding: 0;
+}
+.resp-tabs-list li {
+    font-weight: 600;
+    font-size: 15px;
+    color: #afb6bc;
+    display: inline-block;
+    padding: 13px 15px;
+    margin: 0 4px 0 0;
+    list-style: none;
+    cursor: pointer;
+    float: right;
+    transition:color 0.5s;
+    -moz-transition:color 0.5s; /* Firefox 4 */
+    -webkit-transition:color 0.5s; /* Safari and Chrome */
+    -o-transition:color 0.5s; /* Opera */
+}
+.resp-tabs-list li:hover{
+    color: #2A4982;
+}
+h2.resp-accordion {
+    cursor: pointer;
+    padding: 5px;
+    display: none;
+}
+.resp-tab-content {
+    display: none;
+    padding-top:15px;
+    width: 100%;
+
+}
+/*添加布局*/
+.resp-tab-content div.matchBox{
+    float: left;
+    box-sizing: border-box;
+    width: 50%;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-top: 20px;
+}
+.resp-tab-content div.matchBox div.bg_container{
+    display:block;
+    box-sizing: border-box;
+    width: 100%;
+    background-color:#eeeeee;
+    transition:background-color 0.9s;
+    -moz-transition:background-color 0.9s; /* Firefox 4 */
+    -webkit-transition:background-color 0.9s; /* Safari and Chrome */
+    -o-transition:background-color 0.9s; /* Opera */
+}
+.resp-tab-content div.matchBox div.bg_container:hover{
+    background-color: rgba(238,238,238,0.5);
+}
+.resp-tab-content div a{
+    box-sizing: border-box;
+    display: table;
+    padding: 20px 10px;
+    width:100%;
+    font-size: 14px;
+    height: 24px;
+    line-height: 24px;
+    color:#555555;
+}
+.resp-tab-content div a:hover{
+    color:#325585;
+}
+.resp-tab-content div a div{
+    float: left;
+}
+.resp-tab-content div a div.team1{
+    width: 42%;
+    text-align: right;
+    position: relative;
+    height: 24px;
+
+}
+.resp-tab-content div a div.team1 span.teamName1{
+    position: absolute;
+    right:24px;
+    padding-right: 8px;
+}
+.resp-tab-content div a div.team1 span.teamIcon1{
+    background-size:100% ;
+    position: absolute;
+    top:0;
+    right: 0;
+    width: 24px;
+    height:24px;
+}
+.resp-tab-content div a div.matchTime{
+    width: 16%;
+    text-align: center;
+    letter-spacing: 2px;
+}
+.resp-tab-content div a div.team2{
+    width: 42%;
+    text-align: left;
+    position: relative;
+    height: 24px;
+}
+.resp-tab-content div a div.team2 span.teamName2{
+    position: absolute;
+    left:24px;
+    padding-left: 8px;
+}
+.resp-tab-content div a div.team2 span.teamIcon2{
+    background-size:100% ;
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 24px;
+    height:24px;
+}
+.resp-tab-active {
+    background-color: #fff;
+    border-bottom: 4px solid #325585;
+    padding: 12px 14px 14px 14px;
+}
+.resp-tabs-list li.resp-tab-active{
+    color:#2A4982;
+}
+.resp-content-active, .resp-accordion-active {
+    display: block;
+}
+.resp-tab-content {
+    border-top: 1px solid #c1c1c1;
+}
+h2.resp-accordion {
+    font-size: 13px;
+    margin: 0;
+    padding: 10px 15px;
+}
+h2.resp-tab-active {
+    margin-bottom: 0px !important;
+    padding: 10px 15px !important;
+}
+/*-----------Vertical tabs-----------*/
+.resp-vtabs ul.resp-tabs-list {
+    float: left;
+    width: 30%;
+}
+.resp-vtabs .resp-tabs-list li {
+    display: block;
+    padding: 15px 15px;
+    margin: 0 0 4px;
+    cursor: pointer;
+    float: none;
+}
+.resp-vtabs .resp-tabs-container {
+    padding: 0px;
+    background-color: #fff;
+    float: left;
+    width: 68%;
+    min-height: 250px;
+    border-radius: 4px;
+    clear: none;
+}
+
+.resp-vtabs .resp-tab-content {
+    border: none;
+    word-wrap: break-word;
+}
+.resp-arrow {
+    width: 0;
+    height: 0;
+    float: right;
+    margin-top: 3px;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-top: 12px solid #325585;
+}
+
+h2.resp-tab-active span.resp-arrow {
+    border: none;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-bottom: 12px solid #325585;
+}
+
+/*-----------Accordion styles-----------*/
+
+.resp-easy-accordion h2.resp-accordion {
+    display: block;
+}
+
+.resp-easy-accordion .resp-tab-content {
+    border: 1px solid #c1c1c1;
+}
+
+.resp-easy-accordion .resp-tab-content:last-child {
+    border-bottom: 1px solid #c1c1c1;/* !important;*/
+}
+
+.resp-jfit {
+    width: 100%;
+    margin: 0;
+}
+
+.resp-tab-content-active {
+    overflow: hidden;
+    zoom: 1;
+    display: block;
+    height: auto;
+}
+
+h2.resp-accordion:first-child {
+    border-top: 1px solid #c1c1c1;/* !important;*/
+}
+
+/*Here your can change the breakpoint to set the accordion, when screen resolution changed*/
+@media only screen and (max-width: 768px) {
+    ul.resp-tabs-list {
+        display: none;
+    }
+    .resp-tab-content div{
+        width: 100%;
+    }
+    h2.resp-accordion {
+        display: block;
+    }
+    .resp-tab-content div.matchBox{
+        width: 100%;
+    }
+    .resp-vtabs .resp-tab-content {
+        border: 1px solid #C1C1C1;
+    }
+
+    .resp-vtabs .resp-tabs-container {
+        border: none;
+        float: none;
+        width: 100%;
+        min-height: 100px;
+        clear: none;
+    }
+
+    .resp-accordion-closed {
+        display: none !important;
+    }
+
+    .resp-vtabs .resp-tab-content:last-child {
+        border-bottom: 1px solid #c1c1c1;
+    }
+}
